@@ -5,26 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="asset/image/New CV.pdf" class="btn">Download CV</a>
+      <nav>
+        <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="open"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </label>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="your-cv-link.pdf" class="download-cv" download>Download CV</a></li>
+        </ul>
+      </nav>      
     </header>
     <div class="container">
         <div class="text-content">
           <div class="intro">
             <h1 class="intro-title">Hi, I'm <span class="highlight">Tasnim Reza</span></h1>
-            <p class="intro-subtitle">Web Developer | Creative Thinker | Problem Solver</p>
+            <p>Web Developer | Creative Thinker | Problem Solver</p>
           </div>
             <p>I specialize in creating visually appealing and highly functional websites that bring ideas to life. WI specialize in creating visually appealing and highly functional website a strong background in both design and development, I craft user-friendly digital experiences tailored to meet client needs. My passion lies in turning complex problems into elegant solutions through clean code and creative designs.</p>
             <div class="social-icons">
@@ -72,12 +77,20 @@
             <h1>My Skills</h1>
             <div class="skills-grid">
               <div class="skill-card">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML & CSS" />
-                <p>HTML & CSS</p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+                <p>HTML</p>
+              </div>
+              <div class="skill-card">
+                <img src="asset/image/png-transparent-css-logo-thumbnail-removebg-preview.png" alt="CSS" />
+                <p>CSS</p>
               </div>
               <div class="skill-card">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
                 <p>JavaScript</p>
+              </div>
+              <div class="skill-card">
+                <img src="asset/image/png-clipart-bootstrap-responsive-web-design-web-development-logo-django-others-miscellaneous-purple-thumbnail-removebg-preview.png" alt="Bootstrap" />
+                <p>Bootstrap</p>
               </div>
             </div>
           </div>
@@ -198,6 +211,8 @@
             <div class="rating">★★★★★</div>
           </div>
         </div>
+      </div>
+
         <!-- <div class="navigation">
           <button class="nav-btn">←</button>
           <button class="nav-btn">→</button>
@@ -207,7 +222,6 @@
           <span class="dot"></span>
           <span class="dot"></span>
         </div> -->
-      </div>
       <div class="contact-section">
         <h2>Contact Me</h2>
         <div class="contact-info">
